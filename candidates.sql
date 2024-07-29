@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 11, 2023 at 03:19 PM
+-- Generation Time: Jul 29, 2024 at 09:51 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -39,6 +39,15 @@ CREATE TABLE `candidates` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
+-- Dumping data for table `candidates`
+--
+
+INSERT INTO `candidates` (`idno`, `firstname`, `lastname`, `mi`, `sex`, `address`, `party`, `picture`) VALUES
+(11, 'Hann', 'Solace', 'P.', 'Female', 'Urdaneta City, Pangasinan', '4PS', 'Uploaded_Image/365462149_262576279858526_7177448936465090024_n.jpg'),
+(12, 'Kate', 'Lei', 'M.', 'Female', 'Dagupan City, Pangasinan', '1-RIDER PARTYLIST', 'Uploaded_Image/359495176_828778615437190_571760413338612381_n.jpg'),
+(13, 'Kieszer', 'Harred', 'H.', 'Male', 'Baguio City, Benguet', 'ACT TEACHERS', 'Uploaded_Image/375574514_321830730260409_8673552187699924281_n.jpg');
+
+--
 -- Indexes for dumped tables
 --
 
@@ -56,7 +65,7 @@ ALTER TABLE `candidates`
 -- AUTO_INCREMENT for table `candidates`
 --
 ALTER TABLE `candidates`
-  MODIFY `idno` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idno` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
